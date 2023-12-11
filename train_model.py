@@ -13,8 +13,6 @@ train_batch = ImageDataGenerator(preprocessing_function=tf.keras.applications.vg
     .flow_from_directory(directory=train_path, target_size=(90, 90), classes=['good','bad'], batch_size=10)
 valid_batch = ImageDataGenerator(preprocessing_function=tf.keras.applications.vgg16.preprocess_input) \
     .flow_from_directory(directory=valid_path, target_size=(90, 90), classes=['good','bad'], batch_size=10)
-test_batch = ImageDataGenerator(preprocessing_function=tf.keras.applications.vgg16.preprocess_input) \
-    .flow_from_directory(directory=test_path, target_size=(90, 90), classes=['good','bad'], batch_size=10, shuffle=False)
 
 imgs, labels = next(train_batch)
 
