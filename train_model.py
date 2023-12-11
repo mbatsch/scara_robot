@@ -7,7 +7,6 @@ from tensorflow.keras.preprocessing.image import ImageDataGenerator
 
 train_path = 'data/train'
 valid_path = 'data/valid'
-test_path = 'data/test'
 
 train_batch = ImageDataGenerator(preprocessing_function=tf.keras.applications.vgg16.preprocess_input) \
     .flow_from_directory(directory=train_path, target_size=(90, 90), classes=['good','bad'], batch_size=10)
