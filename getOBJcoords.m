@@ -3,7 +3,6 @@ function centroids = getOBJcoords(r)%#codegen
     w = webcam(r,'/dev/video0','640x480');
     rgbImage = snapshot(w);
     
-   % gsImage=rgb2gray(rgbImage);
     [im,jm,km]=size(rgbImage);
     binaryMask=zeros(im,jm);
     for i=1:im 
@@ -31,14 +30,5 @@ function centroids = getOBJcoords(r)%#codegen
     
     hBlob = vision.BlobAnalysis('AreaOutputPort',false,'BoundingBoxOutputPort',false);
     centroids = hBlob(BW);
-%     
-%     BW = im2uint8(BW);
-%     newImg=cat(3,BW,BW,BW);
-%     
-%     for i=1:10
-%     displayImage(r, newImg,'Title','Dot Detection');
-%     delay(1);
-%     end
-
 
 end
