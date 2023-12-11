@@ -7,9 +7,14 @@ The repository contains some of the code used in the project aiming at develop a
 <b>List of files</b>
 
 <ul>
-  <li><a href="https://github.com/mbatsch/gear_honing/blob/main/meshing_eq_solve.m">meshing_eq_solve.m</a> - discrete solving the nonlinear system of meshing equations to obtain tool surface of action</li>
-  <li><a href="https://github.com/mbatsch/gear_honing/blob/main/tool_profile.m">tool_profile.m</a> - calculation of the honing tool profile</li>
-  <li><a href="https://github.com/mbatsch/gear_honing/blob/main/transverse.m">transverse.m</a> - function for obtaining transverse section of surface</li>
-  <li><a href="https://github.com/mbatsch/gear_honing/blob/main/deviation.m">deviation.m</a> - function for estimation of the distance measured through unit normal between two plane curves</li>
+  <li><a href="https://github.com/mbatsch/scara_robot/blob/main/parts_handling.m">parts_handling.m</a> - function for controlling the robot to simple pick and place task</li>
+  <li><a href="https://github.com/mbatsch/scara_robot/blob/main/getOBJcoords.m">getOBJcoords.m</a> - function for object detection based on image segmentation and blob analysis; returns number of objects and its coordinates</li>
+  <li><a href="https://github.com/mbatsch/scara_robot/blob/main/motorSync.m">motorSync.m</a> - function for synchronous stepper motors control in half-step operation</li>
+  <li><a href="https://github.com/mbatsch/scara_robot/blob/main/invKin.m">invKin.m</a> - inverse kinematics of 2-DOF double SCARA manipulator</li>
+  <li><a href="https://github.com/mbatsch/scara_robot/blob/main/px2xy.m">px2xy.m</a> - function for obtaining coordinates from pixels based on calibration data</li>
+  <li><a href="https://github.com/mbatsch/scara_robot/blob/main/image_prep.py">image_prep.py</a> - image capturing and preparation for training the CNN</li>
+  <li><a href="https://github.com/mbatsch/scara_robot/blob/main/train_model.py">train_model.py</a> - training the CNN</li>
+  <li><a href="https://github.com/mbatsch/scara_robot/blob/main/test_model.py">test_model.py</a> - testing the CNN</li>
+  
 </ul>
 
